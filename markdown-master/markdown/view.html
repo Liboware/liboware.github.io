@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>MarkDown测试 自定义展示</title>
+    <link href="https://cdn.bootcss.com/simplemde/1.11.2/simplemde.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        #edit{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="edit">
+    <textarea></textarea>
+</div>
+
+<div id="view" width="100%">
+
+</div>
+<script src="https://cdn.bootcss.com/simplemde/1.11.2/simplemde.min.js"></script>
+
+<script>
+
+        "## 测试DEMO\n" +
+        "\n" +
+        "----\n" +
+        "#### 图片\n" +
+        "![图片demo](https://alpha.wallhaven.cc/wallpapers/thumb/small/th-729362.jpg)\n" +
+        "\n" +
+        "----\n" +
+        "#### 代码块\n" +
+        "```javascript\n" +
+        "function(){\n" +
+        "\talert('hello wolrd');\n" +
+        "}\n" +
+        "\n" +
+        "```\n" +
+        "\n" +
+        "```java\n" +
+        "public static void main(String args[]){\n" +
+        "\tSystem.out.println(\"hello wolrd\");\n" +
+        "}\n" +
+        "```\n" +
+        "\n" +
+        "```shell\n" +
+        "echo \"hello wolrd\"\n" +
+        "```\n" +
+        "\n" +
+        "----\n" +
+        "## END" +
+        "");
+</script>
+</body>
+</html>
